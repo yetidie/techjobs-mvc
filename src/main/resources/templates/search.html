@@ -39,7 +39,7 @@
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
 
-    <div>
+    <div th:fragment="search">
         <h3 th:if="${jobs}" th:text="${jobs.size() +' Results'}"></h3>
         <table th:each = "job : ${jobs}" class="job-listing">
             <tr th:each = "column : ${job}">
